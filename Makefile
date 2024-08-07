@@ -6,3 +6,6 @@ run-consoleapp:
 
 run-host-consoleapp:
 	dotnet run --project src/HostConsoleApp/HostConsoleApp.csproj
+
+run-minimalapi:
+	dotnet run --project src/MinimalApi/MinimalApi.csproj
