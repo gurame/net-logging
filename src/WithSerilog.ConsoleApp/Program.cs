@@ -4,10 +4,12 @@ using Serilog;
 using Serilog.Context;
 using Serilog.Sinks.SystemConsole.Themes;
 using SerilogTimings.Extensions;
+using WithSerilog.ConsoleApp;
 
 ILogger logger = new LoggerConfiguration()
-	.WriteTo.Console(theme: AnsiConsoleTheme.Code)
+	//.WriteTo.Console(theme: AnsiConsoleTheme.Code)
 	//.WriteTo.Console(new JsonFormatter())
+	.WriteTo.Sink<GurameSink>()
 	.Enrich.FromLogContext()
 	//.Destructure.ByTransforming<Payment>(p => new { p.PaymentId, p.UserId })
 	.Destructure.UsingAttributes()
