@@ -1,4 +1,5 @@
 ﻿
+using ConsoleApp;
 using Microsoft.Extensions.Logging;
 
 using var loggerFactory = LoggerFactory.Create(builder=>{
@@ -12,4 +13,4 @@ var name = "Gustavo";
 var age = 30;
 
 logger.LogTrace("Hello from Trace, {Name}! You are {Age} years old.", name, age);
-logger.LogDebug("Hello from Debug, {Name}! You are {Age} years old.", name, age);
+logger.LogDebug(LogEvents.UserBirthday, "Hello from Debug, {Name}! You are {Age} years old.", name, age);
