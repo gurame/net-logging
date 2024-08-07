@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithSerilog.ConsoleApp", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithSerilog.MinimalApi", "src\WithSerilog.MinimalApi\WithSerilog.MinimalApi.csproj", "{15F9BC40-D128-431A-9D17-C46D04C39045}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighPerformance.ConsoleApp", "src\HighPerformance.ConsoleApp\HighPerformance.ConsoleApp.csproj", "{F797E743-1755-4158-89E5-4D4B2CF49637}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{15F9BC40-D128-431A-9D17-C46D04C39045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15F9BC40-D128-431A-9D17-C46D04C39045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15F9BC40-D128-431A-9D17-C46D04C39045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F797E743-1755-4158-89E5-4D4B2CF49637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F797E743-1755-4158-89E5-4D4B2CF49637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F797E743-1755-4158-89E5-4D4B2CF49637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F797E743-1755-4158-89E5-4D4B2CF49637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FEE31964-2E53-4366-AB95-92485FDE6BF1} = {C6CA38AB-95ED-4D42-9D3E-AC796D208993}
@@ -51,5 +57,6 @@ Global
 		{BAFDE549-5C1B-4890-B69A-E161EF2DA560} = {C6CA38AB-95ED-4D42-9D3E-AC796D208993}
 		{96E9743D-7FB7-4036-876E-D9B76D9DB03F} = {C6CA38AB-95ED-4D42-9D3E-AC796D208993}
 		{15F9BC40-D128-431A-9D17-C46D04C39045} = {C6CA38AB-95ED-4D42-9D3E-AC796D208993}
+		{F797E743-1755-4158-89E5-4D4B2CF49637} = {C6CA38AB-95ED-4D42-9D3E-AC796D208993}
 	EndGlobalSection
 EndGlobal

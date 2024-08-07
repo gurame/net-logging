@@ -15,3 +15,6 @@ run-serilog-consoleapp:
 
 run-serilog-minimalapi:
 	dotnet run --project src/WithSerilog.MinimalApi/WithSerilog.MinimalApi.csproj
+
+run-hp-consoleapp:
+	dotnet run --project src/HighPerformance.ConsoleApp/HighPerformance.ConsoleApp.csproj
