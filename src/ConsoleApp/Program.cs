@@ -23,4 +23,13 @@ var name = "Gustavo";
 var age = 30;
 
 logger.LogTrace("Hello from Trace, {Name}! You are {Age} years old.", name, age);
-logger.LogDebug(LogEvents.UserBirthday, "Hello from Debug, {Name}! You are {Age} years old.", name, age);
+
+try
+{
+	logger.LogDebug(LogEvents.UserBirthday, "Hello from Debug, {Name}! You are {Age} years old.", name, age);
+	throw new Exception("Something went wrong!");
+}
+catch (Exception ex)
+{
+	logger.LogError(ex, "Hello from Error, {Name}! You are {Age} years old.", name, age);
+}
