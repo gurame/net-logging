@@ -9,3 +9,6 @@ run-host-consoleapp:
 
 run-minimalapi:
 	dotnet run --project src/MinimalApi/MinimalApi.csproj
+
+run-serilog-minimalapi:
+	dotnet run --project src/WithSerilog.MinimalApi/WithSerilog.MinimalApi.csproj

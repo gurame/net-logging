@@ -35,7 +35,7 @@ catch (Exception ex)
 	logger.LogError(ex, "Hello from Error, {Name}! You are {Age} years old.", name, age);
 }
 
-
+// formatted log
 var paymentId = 1;
 var amount = 17.99;
 var date = DateTime.Now;
@@ -45,7 +45,7 @@ using(logger.BeginTimedOperation("Handling payment {PaymentId}", paymentId))
 	logger.LogInformation("Processing payment with amount {Amount:C} at {Date}.", amount, date);
 }
 
-// Scopes
+// scopes
 using (logger.BeginScope("Payment {PaymentId}", paymentId))
 {
 	try
@@ -59,7 +59,6 @@ using (logger.BeginScope("Payment {PaymentId}", paymentId))
 }
 
 // box is happening here with args, converting value types to reference types
-
 /*
 var paymentData = new PaymentData
 {

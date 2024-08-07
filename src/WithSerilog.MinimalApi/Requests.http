@@ -1,0 +1,5 @@
+@Host = http://localhost:5211
+
+###
+
+GET {{Host}}/
