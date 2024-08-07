@@ -4,7 +4,17 @@ using Microsoft.Extensions.Logging;
 
 using var loggerFactory = LoggerFactory.Create(builder=>{
 	builder.SetMinimumLevel(LogLevel.Debug);
-	builder.AddJsonConsole();
+	builder.AddJsonConsole(x=>{
+		x.IncludeScopes = false;
+		x.TimestampFormat = "HH:mm:ss";
+		x.JsonWriterOptions = new System.Text.Json.JsonWriterOptions
+		{
+			Indented = true
+		};
+	});
+
+	builder.ClearProviders();
+	builder.AddSimpleConsole();
 });
 
 ILogger logger = loggerFactory.CreateLogger<Program>();
